@@ -1,0 +1,14 @@
+.list { display: flex; flex-direction: column; gap: 1px; }
+.card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem; display: flex; flex-direction: column; gap: 1rem; }
+.header { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: .5rem; }
+.jobType { font-family: var(--font-d); font-weight: 600; font-size: .95rem; margin-right: .75rem; }
+.jobId { font-family: var(--font-m); font-size: .75rem; color: var(--text-muted); }
+.meta { display: flex; gap: 1.25rem; font-family: var(--font-m); font-size: .72rem; color: var(--text-muted); flex-wrap: wrap; }
+.meta strong { color: var(--red); }
+.error { background: var(--red-dim); border: 1px solid rgba(235,87,87,.25); color: var(--red); padding: .75rem 1rem; border-radius: 2px; font-family: var(--font-m); font-size: .78rem; line-height: 1.5; white-space: pre-wrap; word-break: break-word; }
+.payload { background: var(--bg); border: 1px solid var(--border); border-radius: 2px; padding: .75rem 1rem; }
+.payloadLabel { font-family: var(--font-m); font-size: .65rem; color: var(--text-muted); letter-spacing: .08em; text-transform: uppercase; display: block; margin-bottom: .4rem; }
+.payload pre { font-family: var(--font-m); font-size: .76rem; color: var(--text-2); white-space: pre-wrap; word-break: break-word; }
+.retryBtn { align-self: flex-start; background: var(--green-dim); border: 1px solid rgba(111,207,151,.3); color: var(--green); font-family: var(--font-m); font-size: .75rem; padding: .45rem 1.25rem; border-radius: 2px; transition: background .12s; }
+.retryBtn:hover { background: rgba(111,207,151,.2); }
+.empty { padding: 3rem; text-align: center; color: var(--text-muted); font-size: .88rem; }

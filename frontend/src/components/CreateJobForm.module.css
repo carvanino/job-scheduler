@@ -1,0 +1,12 @@
+.form { display: flex; flex-direction: column; gap: 1rem; }
+.row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+.field { display: flex; flex-direction: column; gap: .4rem; }
+.field label { font-family: var(--font-m); font-size: .68rem; letter-spacing: .06em; text-transform: uppercase; color: var(--text-muted); }
+.hint { text-transform: none; letter-spacing: 0; color: var(--text-muted); opacity: .7; }
+.field input, .field select, .field textarea { background: var(--bg); border: 1px solid var(--border); border-radius: 2px; padding: .6rem .8rem; color: var(--text); font-family: var(--font-m); font-size: .82rem; outline: none; transition: border-color .15s; resize: vertical; }
+.field input:focus, .field select:focus, .field textarea:focus { border-color: var(--accent); }
+.error { background: var(--red-dim); border: 1px solid rgba(235,87,87,.3); color: var(--red); padding: .6rem 1rem; border-radius: 2px; font-size: .82rem; }
+.submit { align-self: flex-start; background: var(--accent-dim); border: 1px solid rgba(232,213,163,.3); color: var(--accent); font-family: var(--font-m); font-size: .78rem; letter-spacing: .05em; padding: .6rem 1.5rem; border-radius: 2px; transition: background .15s; }
+.submit:hover:not(:disabled) { background: rgba(232,213,163,.2); }
+.submit:disabled { opacity: .5; cursor: not-allowed; }
+@media (max-width: 768px) { .row { grid-template-columns: 1fr 1fr; } }

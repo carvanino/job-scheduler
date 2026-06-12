@@ -1,0 +1,37 @@
+.wrapper { overflow-x: auto; }
+.table { width: 100%; border-collapse: collapse; font-size: .82rem; }
+.table th { padding: .65rem 1rem; text-align: left; font-family: var(--font-m); font-size: .68rem; letter-spacing: .08em; text-transform: uppercase; color: var(--text-muted); border-bottom: 1px solid var(--border); font-weight: 400; }
+.table td { padding: .65rem 1rem; border-bottom: 1px solid var(--border); color: var(--text-2); vertical-align: middle; }
+.row { cursor: pointer; transition: background .1s; }
+.row:hover td { background: var(--bg-card); }
+.mono { font-family: var(--font-m); font-size: .78rem; }
+.center { text-align: center; }
+.badge { font-family: var(--font-m); font-size: .68rem; padding: .15rem .55rem; border-radius: 2px; letter-spacing: .04em; }
+.yellow { background: var(--yellow-dim); color: var(--yellow); }
+.blue   { background: var(--blue-dim);   color: var(--blue);   }
+.green  { background: var(--green-dim);  color: var(--green);  }
+.red    { background: var(--red-dim);    color: var(--red);    }
+.muted  { background: var(--accent-dim); color: var(--text-2); }
+.priority { font-family: var(--font-m); font-size: .68rem; padding: .15rem .55rem; border-radius: 2px; }
+.p1 { background: var(--red-dim); color: var(--red); }
+.p2 { background: var(--yellow-dim); color: var(--yellow); }
+.p3 { background: var(--accent-dim); color: var(--text-2); }
+.cancelBtn { font-family: var(--font-m); font-size: .7rem; padding: .2rem .6rem; background: var(--red-dim); color: var(--red); border: 1px solid rgba(235,87,87,.3); border-radius: 2px; transition: background .12s; }
+.cancelBtn:hover { background: rgba(235,87,87,.2); }
+.logRow td { padding: 0; }
+.logBox { padding: 1rem 1.5rem 1.25rem; background: var(--bg); border-bottom: 1px solid var(--border); }
+.logTitle { font-family: var(--font-m); font-size: .68rem; color: var(--text-muted); letter-spacing: .08em; text-transform: uppercase; margin-bottom: .75rem; }
+.logEntry { display: flex; gap: 1rem; align-items: baseline; margin-bottom: .35rem; font-size: .8rem; }
+.logTime { font-family: var(--font-m); color: var(--text-muted); font-size: .72rem; min-width: 160px; }
+.logEvent { font-family: var(--font-m); font-size: .7rem; padding: .1rem .45rem; border-radius: 2px; min-width: 90px; text-align: center; }
+.created   { background: var(--accent-dim); color: var(--accent); }
+.started   { background: var(--blue-dim);   color: var(--blue);   }
+.retry     { background: var(--yellow-dim); color: var(--yellow); }
+.completed { background: var(--green-dim);  color: var(--green);  }
+.failed    { background: var(--red-dim);    color: var(--red);    }
+.cancelled { background: var(--accent-dim); color: var(--text-2); }
+.dlq_moved { background: var(--red-dim);    color: var(--red);    }
+.dlq_retry { background: var(--blue-dim);   color: var(--blue);   }
+.logMsg { color: var(--text-2); font-size: .8rem; }
+.errorBanner { background: var(--red-dim); border: 1px solid rgba(235,87,87,.3); color: var(--red); padding: .6rem 1rem; border-radius: 2px; margin-bottom: .75rem; font-size: .82rem; font-family: var(--font-m); }
+.empty { padding: 3rem; text-align: center; color: var(--text-muted); font-size: .88rem; }

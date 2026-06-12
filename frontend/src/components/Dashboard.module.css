@@ -1,0 +1,11 @@
+.grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
+.card { background: var(--bg-card); padding: 1.5rem; display: flex; flex-direction: column; gap: .3rem; transition: background .12s; }
+.card:hover { background: var(--bg-card-hover); }
+.value { font-family: var(--font-d); font-size: 2rem; font-weight: 700; line-height: 1; }
+.label { font-family: var(--font-m); font-size: .68rem; letter-spacing: .08em; text-transform: uppercase; color: var(--text-2); }
+.yellow .value { color: var(--yellow); }
+.blue .value   { color: var(--blue);   }
+.green .value  { color: var(--green);  }
+.red .value    { color: var(--red);    }
+.muted .value  { color: var(--text-2); }
+@media (max-width: 768px) { .grid { grid-template-columns: repeat(3, 1fr); } }

@@ -1,0 +1,29 @@
+.layout { min-height: 100vh; display: flex; flex-direction: column; }
+
+/* Header */
+.header { position: sticky; top: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 1rem 2rem; background: rgba(10,10,10,.92); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+.header-left { display: flex; align-items: center; gap: .75rem; }
+.logo { font-family: var(--font-d); font-weight: 700; font-size: 1rem; color: var(--text); }
+.ws-dot { width: 7px; height: 7px; border-radius: 50%; }
+.live { background: var(--green); box-shadow: 0 0 6px var(--green); }
+.dead { background: var(--red); }
+.ws-label { font-family: var(--font-m); font-size: .7rem; color: var(--text-muted); }
+.tabs { display: flex; gap: 2px; }
+.tab { background: none; border: none; padding: .5rem 1rem; font-family: var(--font-m); font-size: .75rem; color: var(--text-muted); border-radius: 2px; transition: color .12s, background .12s; letter-spacing: .03em; }
+.tab:hover { color: var(--text); background: var(--bg-card); }
+.tab.active { color: var(--accent); background: var(--accent-dim); }
+
+/* DLQ alert banner */
+.dlq-alert { background: var(--red-dim); border-bottom: 1px solid rgba(235,87,87,.3); padding: .65rem 2rem; display: flex; justify-content: space-between; align-items: center; font-family: var(--font-m); font-size: .8rem; color: var(--red); }
+.dlq-alert button { background: none; border: none; color: var(--red); font-size: 1.1rem; line-height: 1; padding: 0 .25rem; }
+
+/* Main */
+.main { max-width: 1280px; margin: 0 auto; width: 100%; padding: 2.5rem 2rem 6rem; display: flex; flex-direction: column; gap: 3rem; }
+.section { display: flex; flex-direction: column; gap: 1.25rem; }
+.section-row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+.section-title { font-family: var(--font-m); font-size: .68rem; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); }
+.section-sub { color: var(--text-muted); font-size: .85rem; max-width: 600px; line-height: 1.65; }
+.filter-row { display: flex; align-items: center; gap: .5rem; }
+.filter-row select { background: var(--bg-card); border: 1px solid var(--border); border-radius: 2px; padding: .4rem .75rem; color: var(--text-2); font-family: var(--font-m); font-size: .75rem; outline: none; }
+.refresh-btn { background: var(--bg-card); border: 1px solid var(--border); border-radius: 2px; padding: .4rem .9rem; color: var(--text-2); font-family: var(--font-m); font-size: .75rem; transition: background .12s; }
+.refresh-btn:hover { background: var(--bg-card-hover); color: var(--text); }
