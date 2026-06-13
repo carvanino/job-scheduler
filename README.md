@@ -398,7 +398,7 @@ Every significant event is logged as a JSON object:
 | `job.cancelled`     | POST /jobs/:id/cancel                        |
 | `job.dlq_moved`     | Retries exhausted                            |
 | `dlq.retry_triggered` | POST /dlq/:id/retry                        |
-| `dlq.threshold_exceeded` | DLQ crosses alert threshold            |
+| `dlq.threshold_exceeded` | DLQ crosses alert threshold             |
 | `starvation.priority_boosted` | Job waiting too long               |
 | `worker.started`    | Worker process begins                        |
 
@@ -413,27 +413,3 @@ Example log line:
   "logger": "app.worker.worker"
 }
 ```
-
----
-
-## What I struggled with
-
-> *(Your section — fill in)*
-
----
-
-## What I learned
-
-> *(Your section — fill in)*
-
----
-
-## Resources consulted
-
-> *(Your section — fill in)*
-
----
-
-## Why this made me a better backend developer
-
-> *(Your section — fill in)*

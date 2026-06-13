@@ -29,7 +29,7 @@ export default function CreateJobForm({ onCreated }) {
       type: form.type,
       priority: Number(form.priority),
       payload,
-      scheduled_at: form.scheduled_at || null,
+      scheduled_at: form.scheduled_at ? `${form.scheduled_at}:00Z` : null,
       recurring_interval: form.recurring_interval || null,
       dependency_ids: form.dependency_ids
         ? form.dependency_ids.split(',').map(s => s.trim()).filter(Boolean)
@@ -66,7 +66,7 @@ export default function CreateJobForm({ onCreated }) {
         </div>
         <div className={styles.field}>
           <label>Scheduled At (UTC)</label>
-          <input type="datetime-local" value={form.scheduled_at} onChange={e => set('scheduled_at', e.target.value ? `${e.target.value}:00Z` : '')} />
+          <input type="datetime-local" value={form.scheduled_at} onChange={e => set('scheduled_at', e.target.value)} />
         </div>
       </div>
       <div className={styles.field}>
